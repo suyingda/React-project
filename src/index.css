@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.head {
+  height: 60px; 
+  line-height: 60px;
+  background: #000000;
+  text-align: center;
+ 
+}
+.head a{
+  color:white;
+}
+.head li{
+   float:left;
+   width:20%;
+   
+}

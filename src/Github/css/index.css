@@ -1,0 +1,44 @@
+ *{
+     padding:0;
+     margin:0;
+ }
+ a{
+     text-decoration: none;
+ }
+li{
+    list-style: none;
+}
+.Top {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background:#ccc;
+    height:50px;
+    width:100%;
+}
+.Top a{
+    display: block;
+    float:left;
+    
+    line-height: 50px; 
+    margin-right:33px;
+
+}
+
+.Bot{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#ccc;
+    height:50px;
+    width:100%;
+    
+}
+.Bot li{
+     
+     float:left;
+     text-align: center;
+     width:50%;
+}

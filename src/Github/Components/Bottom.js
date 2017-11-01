@@ -6,8 +6,7 @@ class Bottom extends Component {
    return (
     <div  className="Bot">
         <ul >
-            <li>我是底部1</li>
-            <li>我是底部2</li>
+            <li>{this.props.title}</li>
         </ul>
     </div>
    );

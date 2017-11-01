@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 
 import Api from './../fetch.js'
 import App from "./../Components/App.js"
+
+import His from './../Mixin.js'
 class Syd2 extends Component {
-    fn(){
-      
-        console.log(Api.user.changeNumPost(163,290,1))
-        console.log(1)
+    fn() {
+        His.push('/Content')
     }
     render() {
         return (
             <App>
-                
-          <div onClick={this.fn.bind(this)}>suyingda2</div> 
+
+                <div onClick={this.fn.bind(this)}>我是第二个点击</div>
             </App>
         );
     }

@@ -5,10 +5,13 @@ class App extends React.Component{
     render(){
         return (
             <div  >
+               
                 <Top/>   
-                <br/><br/><br/>
+                <div className="con">
                 {this.props.children}
-                <Bottom  />
+                </div>
+               
+                <Bottom  title="biaoti" />
             </div>
         )
     }

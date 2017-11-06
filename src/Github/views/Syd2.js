@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import Api from './../fetch.js'
 import App from "./../Components/App.js"
 
-import His from './../Mixin.js'
+// import His from './../Mixin.js'
 class Syd2 extends Component {
     fn() {
-        His.push('/Content')
+        // His.push('/Content')
     }
     render() {
         return (

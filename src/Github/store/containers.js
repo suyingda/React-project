@@ -1,7 +1,8 @@
-import Counter from './index.js'; //组件
+// import Counter from './index.js'; //组件
+import Counter from './../App.js'; //组件
 import * as Actions  from './action.js';
-import PropTypes from 'prop-types'
-import { Provider, connect } from 'react-redux'
+import PropTypes from 'prop-types';
+import { Provider, connect } from 'react-redux';
 
 
 Counter.propTypes = {

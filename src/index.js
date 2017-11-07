@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './Github/App.js';
+// import App from './Github/App.js';
 // import App from './App.js';
  
- 
+import * as Actions  from './Github/store/action.js';
+
+
 import { Provider, connect } from 'react-redux'
-import Store from './Github/store/store.js';
-// import App from './Github/store/containers.js';
- 
+import store from './Github/store/store.js';
+import App from './Github/store/containers.js';
+    let unsubscribe =  store.subscribe(() => {console.log(Actions,store)})
+    
 ReactDOM.render(
-  <Provider store={Store}>
+  <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('root')

@@ -13,7 +13,9 @@ const AuthButton = withRouter(({ history }) => (
     </p>
 
 ))
-
+let fodata = {
+    nam:1,age:2
+}
 class Syd3 extends Component {
     constructor() {
         super();
@@ -24,7 +26,33 @@ class Syd3 extends Component {
     }
 
     fu2() {
-        this.props.history.push("/");
+        let  data = {
+            id:3,
+            name:'xxxxxx',
+            age:36
+        };
+        data = JSON.stringify(data);
+        let path = `/Jsonparse/${data}`;
+
+        this.props.history.push(path);
+
+    }
+    fu3() {
+        var data = {id:3,name:'xxxxxx',age:36};
+        var path = {
+          pathname:'/Queryloaction',
+          query:data,
+        }
+        this.props.history.push(path);
+
+    }
+    fu4() {
+        var data = {id:3,name:'xxxxxx',age:36};
+        var path = {
+          pathname:'/State',
+          state:data,
+        }
+        this.props.history.push(path);
 
     }
     fu() {
@@ -48,7 +76,9 @@ class Syd3 extends Component {
                 </div>
                 <div onClick={this.fu.bind(this)}>123</div>
                 <hr />
-                <div onClick={this.fu2.bind(this)}>我也是点击事件</div>
+                <div onClick={this.fu2.bind(this)}>我也是点击事件Jsonparse</div>
+                <div onClick={this.fu3.bind(this)}>我也是点击事件query</div>
+                <div onClick={this.fu4.bind(this)}>我也是点击事件State</div>
                 <hr />
                 <Link to="/Syd1">xxxx3</Link>
                 <hr />

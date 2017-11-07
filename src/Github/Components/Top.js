@@ -7,7 +7,7 @@ class Head extends Component {
         this.links=[
             {url:"/",text:"首页"},
             {url:"/Content",text:"我的"},
-            {url:"/Syd2",text:"底部"},
+            {url:"/Syd2/",text:"底部"},
             {url:"/Syd3/2",text:"屋顶不"},
         ];
     }

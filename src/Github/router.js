@@ -2,10 +2,6 @@ import React from "react";
 import { HashRouter, Route } from "react-router-dom";
 
 
-import Syd1 from "./views/Syd1"
-import Content from "./views/Content"
-  import Syd2 from "./views/Syd2"
-import Syd3 from "./views/Syd3"
 
 /* const Syd1 = (location, cb) => {
     require.ensure([], require => {
@@ -29,6 +25,15 @@ const Syd3 = (location, cb) => {
         cb(null, require('./views/Syd3').default)
     },'Syd3')
 } */
+
+import Syd1 from "./views/Syd1"
+import Content from "./views/Content"
+  import Syd2 from "./views/Syd2"
+import Syd3 from "./views/Syd3"
+import Jsonparse from "./views/Jsonparse";
+import Queryloaction from "./views/Query";
+import State from "./views/State";
+
 const routes = [
     {
         path: '/',
@@ -56,7 +61,22 @@ const routes = [
         path: '/Syd3',
         sidebar: () => <div>大</div>,
         main: Syd3
-    }
+    },
+    {
+        path: '/Jsonparse/:data',
+        sidebar: () => <div>大</div>,
+        main: Jsonparse
+    },
+    {
+        path: '/Queryloaction',
+        sidebar: () => <div>大</div>,
+        main: Queryloaction
+    },
+    {
+        path: '/State',
+        sidebar: () => <div>大</div>,
+        main: State
+    },
 ]
 
 
@@ -66,7 +86,7 @@ function Routes() {
         <HashRouter >
             <div>
                 {routes.map((route, index) => (
-                    <Route key={index} path={route.path} exact={route.exact} component={route.main} />
+                    <Route key={index} path={route.path} exact={route.exact}   component={route.main} />
                     
                 ))}
                 {/*   <Route exact path="/" component={Syd1}  ></Route>

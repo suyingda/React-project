@@ -1,6 +1,7 @@
  
 
-
+import * as Actions  from './action.js';
+console.log(Actions.c2.type)
  function Reducer(state = { count: 0 }, action) {
    
     const count = state.count

@@ -8,19 +8,13 @@ class Syd2 extends Component {
     constructor(a, context) {
         super();
         console.log(context)
-  
-        
     }
-
     fn() {
         // His.push('/Content')
     }
     render() {
-       
-      
         return (
-            <App>
-                
+            <App>        
            {this.context.a.value}
                 <div onClick={this.fn.bind(this)}>我是第二个点击</div>
             </App>
@@ -28,7 +22,6 @@ class Syd2 extends Component {
     }
 }
 Syd2.contextTypes = {
-    a: PropTypes.object,
-   
+    a: PropTypes.object, 
 }
 export default Syd2;

@@ -6,9 +6,9 @@ import { PropTypes } from "prop-types";
 class App extends Component {
   constructor(props) {
     super();
-     this.state = {
+     /* this.state = {
       a:1
-    } 
+    }  */
   }
   render() {
     

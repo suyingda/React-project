@@ -67,6 +67,8 @@ class Syd3 extends Component {
         return (
             <div>
                 <div>
+                {global.constants.name} 
+                {global.constants.website} 
                     {
                         this.state.list.map(function (username, i) {
                             return <li key={i}>{username.product_id}</li>

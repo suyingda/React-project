@@ -8,31 +8,25 @@ import { Provider, connect } from 'react-redux';
 
 Counter.propTypes = {
     value: PropTypes.number.isRequired,
-    show: PropTypes.number.isRequired,
     onIncreaseClick: PropTypes.func.isRequired,
     jian: PropTypes.func.isRequired,
-    chenfa: PropTypes.func.isRequired,
   }
-  function b(state) {
-    console.log(state,'我是mapStateToProps（state)')
+  function a(state) {
     return {
-      value: state.count,
-      show: state.show,
-
+      value: state.count
     }
   }
  
-  function a(dispatch) {
+  function b(dispatch) {
     return {
       onIncreaseClick: () => dispatch(Actions.cc),
-      jian: () => dispatch(Actions.cc.type2),
-      chenfa:()=>dispatch(Actions.cc.type1)
+      jian: () => dispatch(Actions.c2),
     }
   }
   // Connected Component
   const App = connect(
-    b,
-    a
+    a,
+    b
   )(Counter)
 
   export default App

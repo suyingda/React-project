@@ -4,13 +4,17 @@
 import * as types from './types.js';
 
 function Reducer(state = types.ssss, action) {
- 
-  //  function Reducer(state =types.ssss , action) {
+
   const count = state.count;
-  const show = state.show;
-    if(action.type){
-        return {count:count+11}
-    } 
+  switch (action.type) {
+    case 'suyingda1':
+      return { count: count + 100 }
+    case 'suyingda2':
+      return { count: count -100}
+    default:
+      return state
+  }
+
 }
 export default Reducer
 

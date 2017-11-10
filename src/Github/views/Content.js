@@ -8,7 +8,7 @@ class Content extends Component {
                 Content
             <Cimg name="suyingda"/>
             </App>
-        );
+        );   
     }
 }
 
